@@ -58,7 +58,7 @@
                 <input type="password" placeholder="Password" class="form-control" name="password">
               </div>
               <button type="submit" class="btn btn-success" id="signin" name="signin"><span class="glyphicon glyphicon-log-in"> เข้าระบบ</span></button>
-              <a href="signup.php" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-user"> สมัครสมาชิก</span></a>
+              <a href="register.blade.php" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-user"> สมัครสมาชิก</span></a>
               
               <div class="form-group">
               <div class="checkbox">
