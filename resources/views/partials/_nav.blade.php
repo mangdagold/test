@@ -8,7 +8,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">7AMULET</a>
+            <a class="navbar-brand" href="index.php">TestBand</a>
           </div>
           <div id="navbar_signin" class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" method="post">
