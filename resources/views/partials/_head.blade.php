@@ -5,8 +5,9 @@
         <title>@yield('title')</title>
         <!-- Bootstrap CSS Version 3.3.7 -->
         <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Style CSS-->
+        <!-- Custom CSS-->
         <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/media.css" rel="stylesheet">
         <!-- Carousel -->
         <link href="/css/carousel.css" rel="stylesheet">
         <!-- Sticky-footer styles for this template -->

@@ -2,25 +2,33 @@
 
 @section('title','| Home title')
 @section('content')
-<div class="row" >
+<div class="row">
 
   <!-- Catagories -->
-  <div class="col-xs-2 col-md-2 show-border catagorie">.col-xs-2 .col-md-2
+  <div class="col-xs-2 col-sm-2 col-md-2 show-border catagorie hidden-xs">
     <div class="contrainer">
       <div class="row">
         <div class="col-xs-4 col-md-4">
+        <!-- Picture profile -->
           <div><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="50" height="50"></div>
         </div>
-        <div class="col-xs-8 col-md-8">
+        <!-- hide this section when user use on small devices  -->
+        <div class="col-xs-8 col-md-8 hidden-sm">
           <div><a href="#">รายการส่วนตัว</a></div>
           <div><a href="#">แก้ไขข้อมูล</a></div>
           <div><a href="#">ออกจากระบบ</a></div>
-        </div>
-        
+        </div>   
+      </div>
+      <!-- Show this section when user use on small devices  -->
+      <div class="row hidden-md hidden-lg">
+          <div class="col-xs-12 col-md-12">
+            <div><a href="#">รายการส่วนตัว</a></div>
+            <div><a href="#">แก้ไขข้อมูล</a></div>
+            <div><a href="#">ออกจากระบบ</a></div>
+        </div> 
       </div>
     </div>
 
-    
     <hr>
     <p>หมวดพระเครื่อง</p>
     <ol class="list-unstyled">
@@ -67,7 +75,7 @@
 
 
   <!-- Feeds -->
-  <div class="col-xs-5 col-md-5 show-border">.col-xs-5 .col-md-5
+  <div class="col-xs-10 col-sm-6 col-md-5 show-border">
         <div class="blog-post">
                 <h2 class="blog-post-title"><a href="#">หลวงปู่หมุน ฐิตสีโล</a></h2>
                 <h3>พยานหลักฐานที่ชี้ว่าหลวงปู่หมุนไปร่วมเสกวัตถุมงคลรุ่น 214 ปี ชาตกาล ที่วัดระฆังฯ เมื่อปี254 5</h3>
@@ -156,14 +164,14 @@
 
 
   <!-- Advertise -->
-  <div class="col-xs-3 col-md-3 show-border">.col-xs-3 .col-md-3
+  <div class="col-sm-4 col-md-3 show-border hidden-xs">.col-xs-3 .col-md-3
 
   </div>
 
   <!-- End Advertise -->
 
   <!-- Recent and Favorite view -->
-  <div class="col-xs-2 col-md-2 show-border">.col-xs-2 .col-md-2
+  <div class="col-md-2 show-border hidden-xs hidden-sm">.col-xs-2 .col-md-2
 
   </div>
   <!-- End Recent and Favorite view -->
