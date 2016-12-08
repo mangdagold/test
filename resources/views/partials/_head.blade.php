@@ -6,6 +6,7 @@
         <!-- Bootstrap CSS Version 3.3.7 -->
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS-->
+        <link href="/css/normalize.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
         <link href="/css/media.css" rel="stylesheet">
         <!-- Carousel -->
@@ -20,6 +21,17 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+{{-- 
+       <!-- use for Upload file. -->
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+        <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+        <link rel="stylesheet" href="css/jquery.fileupload.css">
+        <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+        <!-- CSS adjustments for browsers with JavaScript disabled -->
+        <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
+        <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+ --}}
+
         <div id="fb-root"></div>
         <!-- Script for facebook -->
         <script>(function(d, s, id) {
