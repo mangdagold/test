@@ -1,5 +1,5 @@
 <?php
-
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -21,7 +21,20 @@ Route::get('/help', function () {
 
 
 Route::auth();
+Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');
+Route::get('/register', ['as' => 'register', 'uses' => 'Auth\AuthController@showRegistrationForm']);
+
 
 Route::get('/home', 'HomeController@index');
-Route::get('/verify', 'UserController@verify');
+
 Route::resource('user', 'UserController');
+
+Route::get('mail/{id}', function($id){
+	// dd(Config::get('mail'));
+	$user = User::findOrFail($id);
+	Mail::send('emails/verify_template', ['user' => $user], function($m){
+		$m->to('podchara.t@gmail.com', "บี")->subject('7Amulet กรุณายืนยัน email เพื่อนเข้าใช้งาน');
+		$m->from('kttpgroup@gmail.com', "Kit");
+	});
+	return "successfully";
+});
