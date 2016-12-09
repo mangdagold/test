@@ -10,7 +10,7 @@
 
 
     <!-- Start Blog -->
-    <div class="contrainer padding-top-30px">
+    <div class="contrainer">
        @yield('content')
     </div>
     <!-- End Blog -->
