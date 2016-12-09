@@ -2,13 +2,14 @@
 
 @section('title','| Home title')
 @section('content')
-<div class="row padding-top-30px">
+<div class="row">
 
   <!-- Catagories -->
   <div class="col-xs-2 col-sm-2 col-md-2 nav-side-bar hidden-xs">
+  @if (Auth::check()) 
     <div class="contrainer">
       <div class="row">
-        <div class="col-xs-4 col-md-4">
+          <div class="col-xs-4 col-md-4">
         <!-- Picture profile -->
           <div><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="50" height="50"></div>
         </div>
@@ -16,7 +17,7 @@
         <div class="col-xs-8 col-md-8 hidden-sm">
           <div><a href="#">รายการส่วนตัว</a></div>
           <div><a href="#">แก้ไขข้อมูล</a></div>
-          <div><a href="#">ออกจากระบบ</a></div>
+          <div><a href="logout">ออกจากระบบ</a></div>
         </div>   
       </div>
       <!-- Show this section when user use on small devices  -->
@@ -24,11 +25,12 @@
           <div class="col-xs-12 col-md-12">
             <div><a href="#">รายการส่วนตัว</a></div>
             <div><a href="#">แก้ไขข้อมูล</a></div>
-            <div><a href="#">ออกจากระบบ</a></div>
+            <div><a href="logout">ออกจากระบบ</a></div>
         </div> 
       </div>
     </div>
     <hr>
+  @endif
     <p>แนะนำ</p>
     <ol class="list-unstyled">
       <li><a href="#">ห้องสมุดเปิดโลก</a></li>
@@ -82,6 +84,7 @@
 <!-- Feeds -->
   <div class="col-xs-10 col-sm-6 col-md-5 border-feed">
 
+    @if (Auth::check()) 
     <!-- START ... use after Member Login -->
       <ul class="nav nav-pills nav-justified">
         <li class="active"><a data-toggle="pill" href="#content_post">เขียนโพส</a></li>
@@ -165,7 +168,7 @@
         </div>
       </div>
     <!-- END .. use after Member Login -->  
-
+    @endif
       <div class="blog-post">
           <h2 class="blog-post-title"><a href="#">หลวงปู่หมุน ฐิตสีโล</a></h2>
           <h3>พยานหลักฐานที่ชี้ว่าหลวงปู่หมุนไปร่วมเสกวัตถุมงคลรุ่น 214 ปี ชาตกาล ที่วัดระฆังฯ เมื่อปี254 5</h3>
