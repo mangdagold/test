@@ -25,6 +25,8 @@ body{
 	
 	border-color:#BBB;
 }
+
+/* sidebar profile */
 .nav-side-bar {
 	/*margin-left: 10px;*/
 	min-height: 300px;
@@ -52,3 +54,16 @@ body{
 	border-color:#BBB;
 	
 }
+
+/* Over write position glyphicon in bootstrap */
+.glyphicon {
+	top: 0px;
+	/*bottom: 0px;*/
+}
+
+/* use in navbar_form at adv search by bee */
+#adv-search-fixed-width{
+	width: 0px;
+	border: 0px;
+}
+

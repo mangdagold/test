@@ -1,28 +1,60 @@
 /* Extra Small */
 @media(max-width:767px){
-
+    /* search box over lap on top the navbar-fixed-top by bee*/
+    .media-margin-fixed-top{
+        position: fixed;
+        top: -10px;
+        left: 100px;
+        
+    }
+    #adv-search {
+        width: 190px;
+    }
+    #adv-search-member {
+        width: 260px;
+        margin-left: 28%;
+    }
+    /* fixed position the navbar adv search for member by bee*/
+    .navbar-form-member{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 /* Small */
 @media(min-width:768px) and (max-width:991px){
-	#adv-search {
-        width: 500px;
-        margin: 0 auto;
+    #adv-search{
+        width: 300px;
+
     }
+    #adv-search-member {
+        width: 300px;
+        margin-left: 7%;
+    }
+    
 }
+
 
 /* Medium */
 @media(min-width:992px) and (max-width:1199px){
-	#adv-search {
-        width: 500px;
-        margin: 0 auto;
+    #adv-search {
+        width: 300px;
+        margin-left: 10.5%;
+    }
+    #adv-search-member {
+        width: 300px;
+        margin-left: 9%;
     }
 }
 
 /* Large */
 @media(min-width:1200px){
-	#adv-search {
-        width: 500px;
-        margin: 0 auto;
+    #adv-search {
+        width: 300px;
+        margin-left: 12%;
+    }
+    #adv-search-member {
+        width: 300px;
+        margin-left: 10.5%;
     }
 }

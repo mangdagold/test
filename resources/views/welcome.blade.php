@@ -5,7 +5,7 @@
 <div class="row">
 
   <!-- Catagories -->
-  <div class="col-xs-2 col-sm-2 col-md-2 nav-side-bar hidden-xs">
+  <div class="col-xs-2 col-sm-2 col-md-2 nav-side-bar hidden-xs padding-top-10px">
   @if (Auth::check()) 
     <div class="contrainer">
       <div class="row">
@@ -31,6 +31,15 @@
     </div>
     <hr>
   @endif
+
+  @if (!Auth::check()) 
+    <p>ยินดีต้อนรับ</p>
+    <ol class="list-unstyled">
+      <li><a href="#">เข้าระบบ</a></li>
+      <li><a href="#">สมัครสมาชิก</a></li>
+    </ol>
+  @endif
+  
     <p>แนะนำ</p>
     <ol class="list-unstyled">
       <li><a href="#">ห้องสมุดเปิดโลก</a></li>
@@ -82,7 +91,7 @@
 
 
 <!-- Feeds -->
-  <div class="col-xs-10 col-sm-6 col-md-5 border-feed">
+  <div class="col-xs-10 col-sm-6 col-md-5 border-feed padding-top-10px">
 
     @if (Auth::check()) 
     <!-- START ... use after Member Login -->
@@ -167,7 +176,7 @@
           <hr>
         </div>
       </div>
-    <!-- END .. use after Member Login -->  
+    <!-- /.END .. use after Member Login -->  
     @endif
       <div class="blog-post">
           <h2 class="blog-post-title"><a href="#">หลวงปู่หมุน ฐิตสีโล</a></h2>
