@@ -1,6 +1,6 @@
 /* Extra Small */
 @media(max-width:767px){
-    /* search box over lap on top the navbar-fixed-top by bee*/
+/* search box over lap on top the navbar-fixed-top by bee*/
     .media-margin-fixed-top{
         position: fixed;
         top: -10px;
@@ -14,10 +14,30 @@
         width: 260px;
         margin-left: 28%;
     }
-    /* fixed position the navbar adv search for member by bee*/
+/* Member page - fixed position the navbar adv search for member by bee */
     .navbar-form-member{
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+/* Welcone page - edit padding left and right in feed section by bee */
+    #feeds-padding{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #profile_section {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+    #user_pic {
+        width: 120px;
+        height: 120px;
+    }
+
+/* Shop page - use for resize catagorie image */
+    #show_catagorie>div>div>a>span>div>img {
+        max-width: 200px;
+        max-height: 200px;
     }
 }
 
@@ -31,7 +51,16 @@
         width: 300px;
         margin-left: 7%;
     }
-    
+    #profile_section {
+        margin-top: -180px;  
+        margin-bottom: 30px;
+    }
+/* Shop page use for resize catagorie image by bee */
+    #show_catagorie>div>div>a>span>div>img {
+        max-width: 225px;
+        max-height: 225px;
+        
+    }
 }
 
 
@@ -45,6 +74,15 @@
         width: 300px;
         margin-left: 9%;
     }
+    #profile_section {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+/* Shop page - use for resize catagorie image by bee */
+    #show_catagorie>div>div>a>span>div>img {
+        max-width: 225px;
+        max-height: 225px;
+    }
 }
 
 /* Large */
@@ -56,5 +94,14 @@
     #adv-search-member {
         width: 300px;
         margin-left: 10.5%;
+    }
+    #profile_section {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+/* Shop page - use for resize catagorie image by bee */
+    #show_catagorie>div>div>a>span>div>img {
+        max-width: 225px;
+        max-height: 225px;
     }
 }

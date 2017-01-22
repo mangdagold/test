@@ -19,6 +19,13 @@ Route::get('/help', function () {
     return view('help');
 });
 
+Route::get('/shopregister', function () {
+    return view('shopregister');
+});
+
+Route::get('/userhome', function () {
+    return view('userhome');
+});
 
 Route::auth();
 Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');

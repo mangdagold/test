@@ -30,7 +30,7 @@ body{
 .nav-side-bar {
 	/*margin-left: 10px;*/
 	min-height: 300px;
-	background-color: silver;
+	background-color: #f2f2f2;
 	text-align: left;
 	font-size: small;
 }
@@ -49,7 +49,7 @@ body{
 
 }
 .border-feed {
-	border-width:1px; 
+	border:1px; 
 	border-style:none solid;
 	border-color:#BBB;
 	
@@ -61,9 +61,72 @@ body{
 	/*bottom: 0px;*/
 }
 
-/* use in navbar_form at adv search by bee */
+/* use in navbar_form at adv search by Bee */
 #adv-search-fixed-width{
 	width: 0px;
 	border: 0px;
 }
 
+/* fixed line in check box of guarantee @input.form-control on Create Shop Page by Bee */
+.form-control#text-guarantee {
+	display: inline;
+}
+/* fixed line in package price text feild on Create Shop Page by Bee */
+#packagePrice {
+	display: inline;
+}
+#member_type_panel a:focus, a:hover {
+    color: #23527c;
+     text-decoration: none; 
+}
+
+/* Fixed Gallery with Full Collumn */
+.gallery-padding-0 {
+	padding: 0px;
+}
+/* Make border between Picture */
+.padding-right-1 {
+	padding-right: 1px;
+}
+.padding-top-1 {
+	padding-top: 1px;
+	padding-left: 1px;
+}
+.padding-bottom-1 {
+	padding-bottom: 1px;
+	padding-left: 1px;
+}
+.padding-left-1 {
+	padding-left: 1px;
+}
+.padding-1 {
+	padding: 1px;
+}
+
+/* css starting in below use in Shop page */
+#picture_profile {
+	text-align: center;
+}
+.table>tbody>tr>td {
+	padding-bottom: 0px;
+	border-top: 0px;
+}
+.row#catagorie_shop{
+	margin-right:0px;
+}
+#sidebar_shop{
+	padding-left: 25px;
+}
+#item_title {
+	padding: 5px 10px;
+}
+#show_catagorie>div>div>a {
+	text-align: center;
+}
+#show_catagorie>div>div>.well {
+	margin-bottom: 5px;
+}
+#item_title.a {
+	text-align: right;
+	font-size: 75%
+}
